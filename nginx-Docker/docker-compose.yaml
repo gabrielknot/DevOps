@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+        nginx:
+                image: nginx
+                ports:
+                        #Port's configure
+                        #expose | container
+                        - "8080:80"
