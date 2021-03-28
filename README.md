@@ -5,7 +5,7 @@ Welcome to the Docker World!
 -----------
 This is a docker conteinerization power example.
 
-Each of these two directories contains a docker-compose.yaml file, witch means, all you have to do is compose it up folowing the steps:
+Each of these two directories contains a docker-compose.yml file, which means, all you have to do is compose it up following the steps:
 
 To run nginx contaner:
 -----------
@@ -38,7 +38,7 @@ or
 foo@user:~$ cd nginx-Docker && docker-compose up -d
 ```
 running in background
-Stop it folowing:
+Stop it following:
 ----------------------
 ```console
 foo@user:~$ docker-compose down
