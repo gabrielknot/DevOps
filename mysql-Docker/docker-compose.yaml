@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+        db:
+                image: mysql:8.0.2
+                environment:
+                        #All environment variables to configure 
+                        #mysql insde the container
+                        MYSQL_ROOT_PASSWORD: drmao #Root Password
+                        MYSQL_DATABASE: user #Creating a database
+                        #MYSQL_USER, MYSQL_PASSWORD: 'xxxx','xxx' #Create a new user
+                        #MYSQL_ALLOW_EMPTY_PASSWORD: yes 
+                        #MYSQL_RANDOM_ROOT_PASSWORD: yes 
+                        #MYSQL_ONETIME_PASSWORD: xx #The root password expired and must be change.
+                        #MYSQL_INITDB_SKIP_TZINFO: #Skip Timezone Checking. 
+                ports:
+                        #exposed | container
+                        - "3308:3306"
+                volumes:
+                        #Storage the data path 
+                        - my-datavolume:/var/lib/mysql
+volumes:
+        my-datavolume: 
